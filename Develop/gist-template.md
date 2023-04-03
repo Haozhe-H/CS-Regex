@@ -24,23 +24,23 @@ The regex used in this explanation is '/^#?([a-f0-9]{6}|[a-f0-9]{3})$/', this re
 
 ### Anchors
 
-'^' and '$' 
+'^' and '\$'\
 '^' marks the start of a string, and '$' marks the end of a string. So the string will not be selected from the middle, it will only be selected when it matches all the content of a 'word' not just part of it.
 
 ### Quantifiers
 
-'?' and '{}'
+'?' and '{}'\
 '?' shows there will be none or just one character before it. In this case the string it selected will contain one '#' or none in the begining
 '{}' shows how many characters for the requirement before it. In this case '[a-f0-9]{6}' shows there will be 6 characters that matches the requirement in the '[]'
 
 ### OR Operator
 
-'|'
+'|'\
 '|' shows either condition is fine. In this case '[a-f0-9]{6}|[a-f0-9]{3}' either 6 or 3 charactors that matches '[]' are fine for this search
 
 ### Character Classes
 
-'a-f0-9'
+'a-f0-9'\
 'a-f0-9' shows only 'a','b','c','d','e','f' and number '0' to '9' will be selected. Upper case is not allowed as well.
 
 ### Flags
@@ -49,12 +49,12 @@ N/A
 
 ### Grouping and Capturing
 
-'()'
+'()'\
 '()' is the grouping, it seperates and create subexpression of a string. In this case since only hexadecimal number is selected, so there is no subexpression, the only grouping is for the 6 or 3 digit hexadecimal number.
 
 ### Bracket Expressions
 
-'[]'
+'[]'\
 '[]' shows the requirement for the search, the character classes inside this '[]' will be selected.
 
 ### Greedy and Lazy Match
